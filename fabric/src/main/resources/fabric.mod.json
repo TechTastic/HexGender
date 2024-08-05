@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "hexgender",
+  "version": "${version}",
+  "name": "HexGender",
+  "description": "A Hexcasting x Female Gender Mod Addon",
+  "authors": [
+    "TechTastic"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT License",
+  "icon": "assets/hexgender/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "io.github.techtastic.hexgender.fabric.HexGenderFabric"
+      }
+    ]
+  },
+  "mixins": [
+    "hexgender.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "architectury": ">=9.2.14",
+    "fabric-api": "*",
+    "hexcasting": "*",
+    "wildfire_gender": ">=1.20-3.0.1"
+  }
+}

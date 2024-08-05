@@ -1,0 +1,38 @@
+{
+  "name": "hexgender.entry.transition_spells",
+  "category": "hexcasting:patterns/spells",
+  "icon": "minecraft:egg",
+  "sortnum": 10,
+  "advancement": "hexcasting:root",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "hexgender.entry.transition_spells.entry"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexgender:female_transition",
+      "anchor": "hexgender:female_transition",
+      "input": "player",
+      "output": "",
+      "text": "hexgender.page.transition_spells.female_transition"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexgender:male_transition",
+      "anchor": "hexgender:male_transition",
+      "input": "player",
+      "output": "",
+      "text": "hexgender.page.transition_spells.male_transition"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexgender:other_transition",
+      "anchor": "hexgender:other_transition",
+      "input": "player",
+      "output": "",
+      "text": "hexgender.page.transition_spells.other_transition"
+    }
+  ]
+}
