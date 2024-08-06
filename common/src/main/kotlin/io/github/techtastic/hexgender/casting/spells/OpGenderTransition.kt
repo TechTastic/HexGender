@@ -16,7 +16,6 @@ class OpGenderTransition(val gender: GenderPlayer.Gender): SpellAction {
 
     override fun execute(args: List<Iota>, env: CastingEnvironment): SpellAction.Result {
         val player = args.getPlayer(0, argc)
-        if (player.uuid != env.castingEntity?.uuid) throw MishapOthersName(player)
         val genderPlayer = WildfireGender.getOrAddPlayerById(player.uuid)
         return SpellAction.Result(Spell(genderPlayer, gender), MediaConstants.DUST_UNIT, listOf())
     }
