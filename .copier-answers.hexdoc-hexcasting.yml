@@ -1,0 +1,27 @@
+# Changes here will be overwritten by Copier. NEVER EDIT MANUALLY
+# See: https://copier.readthedocs.io/en/stable/configuring/#the-copier-answersyml-file
+_commit: v0.1.11
+_src_path: gh:hexdoc-dev/hexdoc-hexcasting-template
+author: TechTastic
+book_id: hexcasting:thehexbook
+default_branch: master
+github_repo: HexGender
+gradle_mod_version_key: mod_version
+hexdoc_mod_plugin_classname: HexGenderModPlugin
+hexdoc_plugin_classname: HexGenderPlugin
+java_lang:
+    ext: kt
+    src: kotlin
+java_package: io/github/techtastic/hexgender
+mod_display_name: HexGender
+modid: hexgender
+multiloader: true
+package_export_root: doc/src/hexdoc_hexgender/_export
+package_name: hexdoc-hexgender
+package_slug: hexdoc_hexgender
+package_src: doc/src/hexdoc_hexgender
+pages_url: https://techtastic.github.io/HexGender/
+pattern_regex:
+    per_world_value: 'true'
+    regex: make\(\s*"(?P<name>[a-zA-Z0-9_\/]+)",\s*(?:new )?(?:ActionRegistryEntry|OperationAction)\(\s*HexPattern\.fromAngles\(\s*"(?P<signature>[aqweds]+)",\s*HexDir.(?P<startdir>\w+)\)
+pattern_registry: casting/PatternRegistry.kt
