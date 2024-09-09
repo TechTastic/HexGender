@@ -1,0 +1,30 @@
+{
+  "name": "hexgender.entry.bust_patterns",
+  "category": "hexcasting:patterns",
+  "icon": "minecraft:chainmail_chestplate",
+  "sortnum": 20,
+  "advancement": "hexcasting:root",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "hexgender.entry.bust_patterns.entry"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexgender:get_bust_size",
+      "anchor": "hexgender:get_bust_size",
+      "input": "player",
+      "output": "num",
+      "text": "hexgender.page.bust_patterns.get_bust_size"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexgender:set_bust_size",
+      "anchor": "hexgender:set_bust_size",
+      "input": "num",
+      "output": "",
+      "text": "hexgender.page.bust_patterns.set_bust_size"
+    }
+  ]
+}
