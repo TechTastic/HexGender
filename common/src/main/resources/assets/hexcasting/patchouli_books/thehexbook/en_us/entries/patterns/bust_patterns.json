@@ -25,6 +25,102 @@
       "input": "num",
       "output": "",
       "text": "hexgender.page.bust_patterns.set_bust_size"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexgender:get_bounciness",
+      "anchor": "hexgender:get_bounciness",
+      "input": "player",
+      "output": "num",
+      "text": "hexgender.page.bust_patterns.get_bounciness"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexgender:set_bounciness",
+      "anchor": "hexgender:set_bounciness",
+      "input": "num",
+      "output": "",
+      "text": "hexgender.page.bust_patterns.set_bounciness"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexgender:get_floppiness",
+      "anchor": "hexgender:get_floppiness",
+      "input": "player",
+      "output": "num",
+      "text": "hexgender.page.bust_patterns.get_floppiness"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexgender:set_floppiness",
+      "anchor": "hexgender:set_floppiness",
+      "input": "num",
+      "output": "",
+      "text": "hexgender.page.bust_patterns.set_floppiness"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexgender:get_physics",
+      "anchor": "hexgender:get_physics",
+      "input": "player",
+      "output": "bool",
+      "text": "hexgender.page.bust_patterns.get_physics"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexgender:set_physics",
+      "anchor": "hexgender:set_physics",
+      "input": "bool",
+      "output": "",
+      "text": "hexgender.page.bust_patterns.set_physics"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexgender:get_cleavage",
+      "anchor": "hexgender:get_cleavage",
+      "input": "player",
+      "output": "num",
+      "text": "hexgender.page.bust_patterns.get_cleavage"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexgender:set_cleavage",
+      "anchor": "hexgender:set_cleavage",
+      "input": "num",
+      "output": "",
+      "text": "hexgender.page.bust_patterns.set_cleavage"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexgender:get_breast_offsets",
+      "anchor": "hexgender:get_breast_offsets",
+      "input": "player",
+      "output": "vec",
+      "text": "hexgender.page.bust_patterns.get_breast_offsets"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexgender:set_breast_offsets",
+      "anchor": "hexgender:set_breast_offsets",
+      "input": "vec",
+      "output": "",
+      "text": "hexgender.page.bust_patterns.set_breast_offsets"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexgender:get_uniboob",
+      "anchor": "hexgender:get_uniboob",
+      "input": "player",
+      "output": "bool",
+      "text": "hexgender.page.bust_patterns.get_uniboob"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexgender:set_uniboob",
+      "anchor": "hexgender:set_uniboob",
+      "input": "bool",
+      "output": "",
+      "text": "hexgender.page.bust_patterns.set_uniboob"
     }
   ]
 }
