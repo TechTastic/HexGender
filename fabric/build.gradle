@@ -56,19 +56,27 @@ dependencies {
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
 
-    modImplementation "vazkii.patchouli:Patchouli:${minecraft_version}-${patchouli_version}-FABRIC"
-    modImplementation "at.petra-k.hexcasting:hexcasting-fabric-${minecraft_version}:${hexcasting_version}"
-    modRuntimeOnly "at.petra-k.paucal:paucal-fabric-${minecraft_version}:${paucal_version}"
-    modRuntimeOnly "dev.onyxstudios.cardinal-components-api:cardinal-components-api:${cca_version}"
+    // Hex Casting stuff
+    modImplementation("at.petra-k.hexcasting:hexcasting-fabric-${minecraft_version}:${hexcasting_version}") {
+        // If not excluded here, calls a nonexistent method and crashes the dev client
+        exclude module: "phosphor"
+    }
+
+    modImplementation "at.petra-k.paucal:paucal-fabric-$minecraft_version:$paucal_version"
+    modImplementation "vazkii.patchouli:Patchouli:$minecraft_version-$patchouli_version-FABRIC-SNAPSHOT"
+
+    modImplementation "com.samsthenerd.inline:inline-fabric:$minecraft_version-$inline_version"
+
+    modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-api:${cca_version}"
+
+    modImplementation "dev.emi:trinkets:${trinkets_version}"
+
     modRuntimeOnly files("${rootProject.rootDir}/libs/serialization-hooks-0.4.99999.jar")
 
     modImplementation("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")
     implementation("com.eliotlash.mclib:mclib:20")
 
     modImplementation("curse.maven:female-gender-mod-${gender_mod_version}")
-    modImplementation("me.shedaniel.cloth:cloth-config-fabric:11.1.118") {
-        exclude(group: "net.fabricmc.fabric-api")
-    }
 }
 
 processResources {

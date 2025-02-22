@@ -11,8 +11,12 @@ dependencies {
     // Architectury API. This is optional, and you can comment it out if you don't need it.
     modImplementation "dev.architectury:architectury:$rootProject.architectury_api_version"
 
-    modCompileOnly "vazkii.patchouli:Patchouli:${minecraft_version}-${patchouli_version}-FABRIC"
-    modCompileOnly "at.petra-k.hexcasting:hexcasting-common-${minecraft_version}:${hexcasting_version}"
+    modCompileOnly("at.petra-k.hexcasting:hexcasting-common-${project.minecraft_version}:${project.hexcasting_version}") {
+        transitive = false
+    }
+    compileOnly "at.petra-k.paucal:paucal-common-$minecraft_version:$paucal_version"
+    compileOnly "vazkii.patchouli:Patchouli-xplat:$minecraft_version-$patchouli_version-SNAPSHOT"
+    compileOnly "com.samsthenerd.inline:inline-forge:$minecraft_version-$inline_version"
 
     modCompileOnly("curse.maven:female-gender-mod-${gender_mod_version}")
 }
