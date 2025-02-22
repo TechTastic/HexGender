@@ -6,7 +6,6 @@
   "client": [
   ],
   "mixins": [
-    "MixinInjectPatternRegistration"
   ],
   "injectors": {
     "defaultRequire": 1
